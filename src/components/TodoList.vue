@@ -17,6 +17,8 @@
     </div>
 </template>
 
+
+// vue 1
 <script>
 export default {
     data() {
