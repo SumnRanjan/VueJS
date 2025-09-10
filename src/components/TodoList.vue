@@ -3,22 +3,25 @@
         <h1 class="text-4xl font-bold text-blue-700">{{ msg }}</h1>
 
         <div class="flex w-full max-w-md">
-            <input v-model="inputText" type="text" required placeholder="Add a new task..." class="flex-1 px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
-            <button @click="addList" class="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600 transition">Add</button>
+            <input v-model="inputText" type="text" required placeholder="Add a new task..."
+                class="flex-1 px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <button @click="addList"
+                class="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600 transition">Add</button>
         </div>
 
-        <div v-for="(ar, index) in arr" :key="index" class="bg-white shadow p-3 rounded flex justify-between items-center gap-10 w-100">
+        <div v-for="(ar, index) in arr" :key="index"
+            class="bg-white shadow p-3 rounded flex justify-between items-center gap-10 w-100">
             <div><span>{{ ar.text }}</span></div>
             <div class="flex gap-2">
-                <button class="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-600" @click="deleteListItem(index)">Delete </button>
-                <button class="bg-yellow-400 text-white px-2 py-1 rounded hover:bg-yellow-500"@click="editListItem(index)">Edit</button>
+                <button class="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-600"
+                    @click="deleteListItem(index)">Delete </button>
+                <button class="bg-yellow-400 text-white px-2 py-1 rounded hover:bg-yellow-500"
+                    @click="editListItem(index)">Edit</button>
             </div>
         </div>
     </div>
 </template>
 
-
-// vue 1
 <script>
 export default {
     data() {
@@ -56,4 +59,4 @@ export default {
         }
     }
 }
-</script>
+</script> -->
